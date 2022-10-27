@@ -1,0 +1,39 @@
+.wrapper {
+  width: 540px;
+  height: 40px;
+  display: flex;
+  position: relative;
+}
+
+.input-search {
+  flex: 1;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  padding: 5px 20px;
+}
+.input-search:focus ~ .result-search {
+  display: flex;
+}
+
+.btn-search:active {
+  filter: brightness(80%);
+}
+
+.result-search {
+  width: 100%;
+  position: absolute;
+  background-color: var(--white);
+  top: 110%;
+  height: 400px;
+  z-index: 2;
+  display: none;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.result-search p {
+  margin: 5px 0;
+  cursor: pointer;
+}/*# sourceMappingURL=Search.module.css.map */

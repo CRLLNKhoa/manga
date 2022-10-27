@@ -1,0 +1,327 @@
+.wrapper {
+  background-color: var(--primary);
+  height: 109px;
+}
+
+.wrapper__header-main {
+  height: 64px;
+}
+
+.wrapper__header-nav {
+  height: 45px;
+  background-color: var(--white);
+  border-bottom: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.header-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.header-main img {
+  height: 36px;
+}
+
+.text {
+  color: var(--white);
+}
+
+.span-login {
+  cursor: pointer;
+}
+.span-login:hover {
+  color: black;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.span-register {
+  cursor: pointer;
+}
+.span-register:hover {
+  color: black;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.cart {
+  cursor: pointer;
+  position: relative;
+}
+.cart .icon {
+  font-size: 3rem;
+  color: var(--white);
+  margin-right: 10px;
+}
+.cart .num-product {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--notic);
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  font-size: 1.2rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(123, 122, 121, 0.4509803922);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modal-user {
+  width: 500px;
+  height: 554px;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.btn-close__modal-login {
+  border: none;
+  background-color: transparent;
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.tab {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.tab-active {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.cursor-point {
+  cursor: pointer;
+}
+
+.label-input {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.span-link {
+  color: var(--primary);
+  cursor: pointer;
+}
+.span-link:hover {
+  filter: brightness(60%);
+}
+
+.input {
+  height: 42px;
+  margin-top: 20px;
+  border: 4px solid transparent;
+  background-color: #f5f4f2;
+  outline: none;
+  border-radius: 80px;
+  font-size: 1.8rem;
+  padding: 5px 20px;
+}
+.input:focus {
+  border-color: var(--primary);
+}
+
+.save-pass {
+  display: flex;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1.5rem;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.save-pass:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.save-pass input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.save-pass input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.save-pass .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  flex-direction: column;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.form-register button {
+  margin-top: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.icon-social {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  margin-top: 20px;
+}
+
+.header-nav {
+  width: 100%;
+  height: 45px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-nav {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.active-tab-nav {
+  cursor: pointer;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.tab-nav {
+  margin: 0 20px;
+}
+.tab-nav:hover {
+  color: var(--primary);
+}
+
+.active-tab-nav {
+  margin: 0 20px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-popper {
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+}
+.item-popper:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 1000px) {
+  .header-main {
+    background-color: rgb(54, 192, 75);
+  }
+}/*# sourceMappingURL=Header.module.css.map */

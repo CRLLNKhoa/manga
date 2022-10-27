@@ -1,0 +1,92 @@
+.wrapper {
+  width: 214px;
+  height: 303px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  position: relative;
+  border: rgba(181, 175, 175, 0.2588235294) 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.wrapper:hover .img-fs {
+  transform: scale(1.1);
+}
+
+.img-box {
+  height: 214px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-fs {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-size: 1.4rem;
+  padding: 20px 10px;
+  border-top: 1px solid rgba(181, 175, 175, 0.2588235294);
+  font-weight: bold;
+}
+
+.name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.current-price {
+  color: var(--red);
+}
+
+.sale-price {
+  text-decoration: line-through;
+  font-size: 1.3rem;
+  margin-left: 10px;
+  opacity: 0.4;
+}
+
+.sale-per {
+  background-color: var(--notic);
+  padding: 12px 8px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 999px;
+}
+
+.race {
+  display: flex;
+  margin: auto;
+}
+.race svg {
+  margin-left: 5px;
+  color: var(--notic);
+}
+
+.sold-out {
+  position: absolute;
+  bottom: 0;
+  background-color: #000;
+  color: var(--white);
+  padding: 5px;
+  font-weight: bold;
+}/*# sourceMappingURL=FsItem.module.css.map */

@@ -1,0 +1,48 @@
+.wrapper {
+  width: 368px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.body {
+  padding: 10px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+.body .title {
+  margin: 10px 0;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.body .info {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0;
+}
+.body .summary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.body .author {
+  margin-right: 10px;
+}
+
+.img-box {
+  width: 100%;
+  height: 258px;
+  overflow: hidden;
+}
+.img-box:hover > img {
+  transform: scale3d(1);
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=NewItem.module.css.map */
