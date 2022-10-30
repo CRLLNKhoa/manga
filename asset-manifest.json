@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tangerine-bonbon-a53855.netlify.app/static/css/main.15367769.css",
-    "main.js": "/tangerine-bonbon-a53855.netlify.app/static/js/main.17f4a8ea.js",
-    "static/js/787.042cb57d.chunk.js": "/tangerine-bonbon-a53855.netlify.app/static/js/787.042cb57d.chunk.js",
-    "index.html": "/tangerine-bonbon-a53855.netlify.app/index.html",
-    "main.15367769.css.map": "/tangerine-bonbon-a53855.netlify.app/static/css/main.15367769.css.map",
-    "main.17f4a8ea.js.map": "/tangerine-bonbon-a53855.netlify.app/static/js/main.17f4a8ea.js.map",
-    "787.042cb57d.chunk.js.map": "/tangerine-bonbon-a53855.netlify.app/static/js/787.042cb57d.chunk.js.map"
+    "main.css": "./static/css/main.15367769.css",
+    "main.js": "./static/js/main.6da5b1af.js",
+    "static/js/787.042cb57d.chunk.js": "./static/js/787.042cb57d.chunk.js",
+    "index.html": "./index.html",
+    "main.15367769.css.map": "./static/css/main.15367769.css.map",
+    "main.6da5b1af.js.map": "./static/js/main.6da5b1af.js.map",
+    "787.042cb57d.chunk.js.map": "./static/js/787.042cb57d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15367769.css",
-    "static/js/main.17f4a8ea.js"
+    "static/js/main.6da5b1af.js"
   ]
 }
